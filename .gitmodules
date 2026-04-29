@@ -1,6 +1,0 @@
-[submodule "LightGCN"]
-	path = LightGCN
-	url = git@github.com:tuananhlevan/lightgcn.git
-[submodule "TwoTower"]
-	path = TwoTower
-	url = https://github.com/sunnycloudhust/TwoTowerRetrival_RecommenderSystem
