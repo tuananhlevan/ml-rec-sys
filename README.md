@@ -17,7 +17,7 @@ This repository does not host the source code locally to ensure a minimal footpr
 | **NCF** | Deep Learning | Neural Collaborative Filtering (GMF + MLP). | [View Implementation](https://github.com/yihong-chen/neural-collaborative-filtering) |
 | **Wide & Deep** | Hybrid | Jointly trained wide and deep models for ranking. | [View Implementation](https://github.com/jrjohansson/wide-and-deep-learning) |
 | **SASRec** | Sequential | Self-Attentive Sequential Recommendation (Transformer-based). | [View Implementation](https://github.com/pmixer/SASRec.pytorch) |
-| **LightGCN** | Graph-based | Simplified Graph Convolutional Networks for RecSys. | [View Implementation](https://github.com/gusye1234/LightGCN-PyTorch) |
+| **LightGCN** | Graph-based | Simplified Graph Convolutional Networks for RecSys. | [View Implementation](https://github.com/tuananhlevan/lightgcn) |
 | **Mult-VAE** | Generative | Variational Autoencoders for Collaborative Filtering. | [View Implementation](https://github.com/dawenliou/VAE_CF) |
 | **DeepFM** | Hybrid | Factorization-Machine based Neural Network. | [View Implementation](https://github.com/ChenglongChen/tensorflow-DeepFM) |
 
