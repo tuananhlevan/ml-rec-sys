@@ -1,3 +1,0 @@
-[submodule "LightGCN"]
-	path = LightGCN
-	url = git@github.com:tuananhlevan/lightgcn.git
