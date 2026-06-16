@@ -1,6 +1,6 @@
 # RecSys-Index
 
-A curated, lightweight directory of high-performance recommendation system implementations. This repository serves as a navigator for exploring various architectures, from classic matrix factorization to modern graph-based models.
+A curated, lightweight directory of high-performance recommendation system implementations. This repository serves as a navigator for exploring various architectures, from classic matrix factorization to modern graph-based and sequential models.
 
 ## How to Use This Repo
 This repository does not host the source code locally to ensure a minimal footprint. Instead, it provides vetted links to high-quality implementations. 
@@ -13,12 +13,14 @@ This repository does not host the source code locally to ensure a minimal footpr
 
 | Model | Category | Description | Source Link |
 | :---: | :---: | :---: | :---: |
-| **BPR-MF** | Classic ML | Bayesian Personalized Ranking for implicit feedback. | [View Implementation](https://github.com/guoyang9/BPR-pytorch) |
-| **NCF** | Deep Learning | Neural Collaborative Filtering (GMF + MLP). | [View Implementation](https://github.com/yihong-chen/neural-collaborative-filtering) |
-| **Item + Content Based CF** | Hybrid | Jointly trained wide and deep models for ranking. | [View Implementation](https://github.com/quangpt22/Hybrid-Recommender-System---ML) |
-| **SASRec** | Sequential | Self-Attentive Sequential Recommendation (Transformer-based). | [View Implementation](https://github.com/CRedRiver/ml_sasrec) |
-| **LightGCN** | Graph-based | Simplified Graph Convolutional Networks for RecSys. | [View Implementation](https://github.com/tuananhlevan/lightgcn) |
-| **DeepFM** | Hybrid | Factorization-Machine based Neural Network. | [View Implementation](https://github.com/ChenglongChen/tensorflow-DeepFM) |
+| **Matrix Factorization (MF)** | Classic ML | Classical collaborative filtering decomposing the user-item interaction matrix into low-rank latent factors. | [View Implementation](https://github.com/DuyTung24/Movie-Recommendation-System-on-different-aglos/tree/main/Matrix%20Factorization)|
+| **Memory-Based CF** | Classic ML | Memory-based collaborative filtering identifying similar users to recommend items preferred by like-minded peers. | [View Implementation](https://github.com/DuyTung24/Movie-Recommendation-System-on-different-aglos/tree/main/Memory_based%20Filtering) |
+| **Content-Based CF** | Classic ML | Traditional neighborhood-based collaborative filtering using matrix-wide similarity metrics to find correlations. | [View Implementation](https://github.com/DuyTung24/Movie-Recommendation-System-on-different-aglos/tree/main/Content_based%20Filtering) |
+| **NCF (Neural CF)** | Deep Learning | Deep learning framework that replaces the inner product in matrix factorization with a neural network architecture capable of learning non-linear user-item interactions. | [View Implementation](https://github.com/DuyTung24/Movie-Recommendation-System-on-different-aglos/tree/main/NCF%20Movie%20Recommendation) |
+| **Hybrid Wide & Deep** | Hybrid | Jointly trained wide linear models and deep neural networks for combining memorization and generalization. | [View Implementation](https://github.com/quangpt22/Hybrid-Recommender-System---ML) |
+| **Two-Tower Retrieval** | Deep Learning | Dual-encoder architecture separating user and item feature representations for efficient candidate generation. | [View Implementation](https://github.com/sunnycloudhust/TwoTowerRetrival_RecommenderSystem) |
+| **LightGCN** | Graph-based | Simplified Graph Convolutional Networks optimized specifically for collaborative filtering by removing feature transformations and non-linearities. | [View Implementation](https://github.com/tuananhlevan/lightgcn) |
+| **SASRec** | Sequential | Self-Attentive Sequential Recommendation using a Transformer-based architecture to capture long-term and short-term user dynamics. | [View Implementation](https://github.com/CRedRiver/ml_sasrec) |
 
 ---
 
@@ -29,6 +31,7 @@ All linked implementations focus on top-$K$ ranking performance:
 * **Recall@K**: The proportion of all relevant items that are captured in the top-$K$ list.
 * **MRR@K (Mean Reciprocal Rank)**: Measures where the first relevant item appears in the top-$K$ list, rewarding higher placements.
 * **NDCG@K (Normalized Discounted Cumulative Gain)**: Evaluates the ranking quality by accounting for the specific position of all relevant items.
+* **HitRate@K**: Measures the proportion of testing instances where the ground-truth item is included in the top-$K$ recommendation list.
 
 ## Benchmark Results
 
@@ -38,4 +41,6 @@ All linked implementations focus on top-$K$ ranking performance:
 
 | Model | NDCG@10 | HitRate@10 | MRR@10 |
 | :---: | :---: | :---: | :---: |
-|  **SasRec** | 0.1464 ± 0.0030 | 0.2680 ± 0.0047 | 0.1097 ± 0.0026 |
+|  **SasRec** | 0.1932 ± 0.0019 | 0.3285 ± 0.0030 | 0.1518 ± 0.0016 |
+| **LightGCN** | 0.0438 ± 0.0003 | 0.0899 ± 0.0013 | 0.0302 ± 0.0004 |
+| **NeuMF** | 0.3918 ± 0.0016 | 0.6615 ± 0.0014 | 0.3089 ± 0.0020|
