@@ -38,6 +38,7 @@ All linked implementations focus on top-$K$ ranking performance:
 | Model | NDCG@20 | Recall@20 | MRR@20 | Precision@20 |
 | :---: | :---: | :---: | :---: | :---: |
 |  **LightGCN** | 0.3578 ± 0.0011 | 0.2604 ± 0.0012 | 0.6077 ± 0.0022 | 0.2630 ± 0.0009 |
+| **Two Towers** | 0.0177 ± 0.0007 | 0.0490 ± 0.0019 | 0.0093 ± 0.0004 | 0.0024 ± 0.0001 |
 
 | Model | NDCG@10 | HitRate@10 | MRR@10 |
 | :---: | :---: | :---: | :---: |
