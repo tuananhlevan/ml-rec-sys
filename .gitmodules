@@ -1,0 +1,15 @@
+[submodule "two-tower-recommender-system"]
+	path = two-tower-recommender-system
+	url = git@github.com:sunnycloudhust/two-tower-recommender-system.git
+[submodule "lightgcn"]
+	path = lightgcn
+	url = git@github.com:tuananhlevan/lightgcn.git
+[submodule "Movie-Recommendation-System-on-different-aglos"]
+	path = Movie-Recommendation-System-on-different-aglos
+	url = git@github.com:DuyTung24/Movie-Recommendation-System-on-different-aglos.git
+[submodule "ml_sasrec"]
+	path = ml_sasrec
+	url = git@github.com:CRedRiver/ml_sasrec.git
+[submodule "Hybrid-Recommender-System---ML"]
+	path = Hybrid-Recommender-System---ML
+	url = git@github.com:quangpt22/Hybrid-Recommender-System---ML.git
