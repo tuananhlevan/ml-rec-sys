@@ -1,2 +1,4 @@
 report/*
-!report/report.pdf
+!report/main.pdf
+presentation/*
+!presentation/presentation.pdf
