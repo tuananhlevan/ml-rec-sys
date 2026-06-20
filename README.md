@@ -3,7 +3,24 @@
 A curated, lightweight directory of high-performance recommendation system implementations. This repository serves as a navigator for exploring various architectures, from classic matrix factorization to modern graph-based and sequential models.
 
 ## How to Use This Repo
-This repository does not host the source code locally to ensure a minimal footprint. Instead, it provides vetted links to high-quality implementations. 
+
+This repository directly includes the source code for all the recommendation system implementations as sub-directories.
+
+To clone this repository, run the following command:
+
+```bash
+git clone --recursive https://github.com/tuananhlevan/ml-rec-sys
+```
+
+Or you can use the table below to redirect towards some specific implementations of ours.
+
+### Environment Setup
+The `environment.yml` file in the root of this repository is the **shared environment for every single included subrepo**. You can create and activate this centralized conda environment by running:
+
+```bash
+conda env create -f environment.yml
+conda activate mlrecsys
+```
 
 **To access the code, please click the links in the table below to be redirected to the respective source repositories.**
 
@@ -38,7 +55,7 @@ All linked implementations focus on top-$K$ ranking performance:
 | Random | NDCG@20 | Recall@20 | MRR@20 | Precision@20 |
 | :---: | :---: | :---: | :---: | :---: |
 | **Content-based Filtering** | 0.0185 ± 0.0006 | 0.0115 ± 0.0006 | 0.0541 ± 0.0016 | 0.0152 ± 0.0004 |
-| **Hybrid Filtering** | ... | ... | ... | ... |
+| **Hybrid Filtering** | 0.0474 ± 0.0047 | 0.0518 ± 0.0095 | 0.1004 ± 0.0071 | 0.0302 ± 0.0048 |
 | **Memory-based Filtering** | 0.0363 ± 0.0008 | 0.0148 ± 0.0007 | 0.1014 ± 0.0018 | 0.0274 ± 0.0012 |
 | **Matrix Factorization** | 0.1469 ± 0.0010 | 0.1275 ± 0.0015 | 0.2889 ± 0.0038 | 0.1055 ± 0.0010 |
 | **Neural MF** | 0.3264 ± 0.0006 | 0.2268 ± 0.0006 | 0.5734 ± 0.0006 | 0.2460 ± 0.0006 |
@@ -47,9 +64,9 @@ All linked implementations focus on top-$K$ ranking performance:
 
 | Leave-one-out | NDCG@10 | HitRate@10 | MRR@10 |
 | :---: | :---: | :---: | :---: |
-| **Content-based Filtering** | 0.0054 | 0.0108 | 0.0037 |
-| **Hybrid Filtering** | ... | ... | ... |
-| **Memory-based Filtering** | 0.0020 | 0.0051 | 0.0011 |
+| **Content-based Filtering** | 0.0054 ± 0.0003 | 0.0108 ± 0.0005 | 0.0037 ± 0.0007 |
+| **Hybrid Filtering** | 0.0086 ± 0.0005  | 0.0192 ± 0.0005 | 0.0054 ± 0.0003 |
+| **Memory-based Filtering** | 0.0020 ± 0.0002  | 0.0051 ± 0.0002 | 0.0011 ± 0.0001 |
 | **Matrix Factorization** | 0.0109 ± 0.0004 | 0.0228 ± 0.0021 | 0.0073 ± 0.0011 |
 | **Neural MF** | 0.0148 ± 0.0004 | 0.0329 ± 0.0010 | 0.0094 ± 0.0003 |
 | **Two Towers** | 0.0980 ± 0.0024 | 0.1888 ± 0.0026 | 0.0706 ± 0.0025 |
