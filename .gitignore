@@ -1,4 +1,3 @@
 report/*
 !report/main.pdf
-presentation/*
-!presentation/presentation.pdf
+!report/slide.pdf
